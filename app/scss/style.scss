@@ -1,0 +1,19 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+@import 'elements/btns';
+@import 'elements/icons';
+@import 'elements/dark-mode';
+
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/burger';
+@import 'blocks/nav';
+@import 'blocks/slider';
+
+@import 'pages/index';
+
+@import 'media';

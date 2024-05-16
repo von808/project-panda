@@ -1,0 +1,59 @@
+.dark-mode-btn {
+  order: 1;
+  width: 54px;
+  height: 26px;
+  padding: 1px;
+  border-radius: 50px;
+  display: flex;
+  gap: 1px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--white);
+  position: relative;
+  z-index: 1;
+
+  .light-mode {
+    padding: 4px;
+    z-index: 3;
+  }
+
+  .dark-mode {
+    padding: 4px;
+    z-index: 3;
+  }
+
+  .dark-mode-circle {
+    display: block;
+    background-color: var(--white);
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+    left: 0px;
+    transition: all .1s linear;
+  }
+}
+
+.switch .dark-mode-circle {
+  left: 26px;
+}
+
+.icons-light {
+  display: none;
+}
+
+.switch {
+  .icons-light {
+    display: block;
+  }
+
+  .icons-dark {
+    display: none;
+  }
+
+  .gallery .switch-1 {
+    color: var(--white);
+  }
+}

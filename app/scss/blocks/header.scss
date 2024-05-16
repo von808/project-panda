@@ -1,0 +1,29 @@
+.header {
+  position: relative;
+  z-index: 3 ;
+
+  &__inner {
+    min-height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.logo {
+  margin-right: auto;
+
+  &__link {}
+
+  &__img {
+    display: block;
+  }
+}

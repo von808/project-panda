@@ -1,0 +1,57 @@
+.footer {
+  background: #181818;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 65px 0px 100px;
+  }
+
+  &__content {
+    max-width: 363px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .location__link {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.64px;
+  }
+
+  .phone__link {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.8px;
+  }
+
+  .logo__img {
+    width: 290px;
+  }
+
+  .nav {}
+
+  .nav__list {
+    max-height: 240px;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0 100px;
+  }
+
+  .nav__link {
+    color: var(--white);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 0.8px;
+  }
+}

@@ -1,0 +1,120 @@
+.burger {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 40px 64px 40px 90px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% bottom;
+
+  pointer-events: none;
+  z-index: -10;
+  opacity: 0;
+  top: 50px;
+  transition: top 0.15s linear, opacity 0.15s linear, z-index 0.3s linear;
+
+  &.burger-show {
+    pointer-events: all;
+    z-index: 10;
+    opacity: 1;
+    top: 0px;
+    transition: top 0.15s linear, opacity 0.15s linear;
+  }
+
+  &__left {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+
+    color: var(--white);
+    font-family: gt-flexa-mono;
+    font-size: 128px;
+    font-size: clamp(64px, 10vw, 128px);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 40px;
+  }
+
+  &__close {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    order: 0;
+  }
+
+  .header__btns {
+    display: none;
+  }
+
+  &__close-line {
+    display: block;
+    width: 38px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #FFF;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+
+    &:nth-child(1) {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+
+  &__btn {
+    width: 37px;
+    height: 37px;
+    position: relative;
+  }
+
+  &__line {
+    width: 37px;
+    height: 2px;
+    background-color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:nth-child(1) {
+      transform: translate(-50%, calc(-50% - 9px));
+    }
+
+    &:nth-child(3) {
+      transform: translate(-50%, calc(-50% + 9px));
+    }
+  }
+}

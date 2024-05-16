@@ -1,0 +1,23 @@
+:root {
+  --white: #fff;
+  --black: #444;
+  --muted: #A5A5A5;
+
+  --body: #101010;
+
+  // SWITCH
+  --switch-white: #fff;
+  --switch-black: #444;
+  --switch-muted: #A5A5A5;
+
+  --switch-black-investment: #050402;
+
+  .switch {
+    --switch-white: #444;
+    --switch-black: #fff;
+
+    --switch-black-investment: #fff;
+
+    --body: #FBF6EE;
+  }
+}
