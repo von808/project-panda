@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PANDAWA</title>
+  <link rel="stylesheet" href="libs/jarallax/jarallax.css">
+  <link rel="stylesheet" href="libs/wowjs/animate.css">
+  <style>
+    body.switch {
+      background-image: url(images/body.png);
+    }
+
+    .switch .investment__btn-box {
+      background-image: url(images/investment-decor-black.png);
+    }
+
+    @media(max-width: 576px) {
+      .hero .video {
+        background-image: url(images/hero-m.jpg) !important;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <svg style="display: none;">
+    <symbol id="icons-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+      <g>
+        <path
+          d="M24.3608 19.9982H21.562V30.1532H17.3658V19.9995H15.2695V16.4995H17.3658V14.3982C17.3658 11.5432 18.5495 9.8457 21.912 9.8457H24.712V13.3457H22.962C21.6533 13.3457 21.5658 13.8357 21.5658 14.747L21.562 16.4995H24.732L24.3608 19.9982Z" />
+      </g>
+    </symbol>
+    <symbol id="icons-instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+      <g>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M30 24.1887C30 25.9245 29.3962 27.434 28.3396 28.4906C27.283 29.5472 25.7736 30.0755 24.1132 30.0755H15.8868C14.2264 30.0755 12.717 29.5472 11.6604 28.4906C10.5283 27.434 10 25.9245 10 24.1887V15.8868C10 12.4151 12.3396 10 15.8868 10H24.1887C25.9245 10 27.3585 10.6038 28.4151 11.6604C29.4717 12.717 30 14.1509 30 15.8868V24.1887ZM24.1132 11.8113H15.8113C14.6038 11.8113 13.5472 12.1887 12.8679 12.8679C12.1887 13.5472 11.8113 14.6038 11.8113 15.8113V24.1132C11.8113 25.3208 12.1887 26.3774 12.9434 27.1321C13.6981 27.8113 14.6792 28.1887 15.8868 28.1887H24.1132C25.3208 28.1887 26.3774 27.8113 27.0566 27.1321C27.8113 26.4528 28.1887 25.3962 28.1887 24.1887V15.8868C28.1887 14.6792 27.8113 13.6981 27.1321 12.9434C26.3774 12.1887 25.3962 11.8113 24.1132 11.8113ZM19.9623 25.0943C17.0943 25.0943 14.8302 22.7547 14.8302 19.9623C14.8302 17.0943 17.1698 14.8302 19.9623 14.8302C22.7547 14.8302 25.1698 17.0943 25.1698 19.9623C25.1698 22.8302 22.8302 25.0943 19.9623 25.0943ZM25.3208 15.8113C24.6415 15.8113 24.1132 15.283 24.1132 14.6038C24.1132 13.9245 24.6415 13.3962 25.3208 13.3962C26 13.3962 26.5283 13.9245 26.5283 14.6038C26.5283 15.283 26 15.8113 25.3208 15.8113ZM23.2831 19.9622C23.2831 21.7962 21.7963 23.283 19.9623 23.283C18.1283 23.283 16.6415 21.7962 16.6415 19.9622C16.6415 18.1282 18.1283 16.6415 19.9623 16.6415C21.7963 16.6415 23.2831 18.1282 23.2831 19.9622Z" />
+      </g>
+    </symbol>
+    <symbol id="asd">
+      <g>
+  
+      </g>
+    </symbol>
+  </svg>
+  <div class="wrapper">
+    <div class="burger" style="background-image: url(images/bg-buger.jpg);">
+      <div class="burger__left">
+        <div class="logo">
+          <a class="logo__link" href="#!">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+        </div>
+        <div class="burger__title">
+          <span>LIvE.</span>
+          <span>ENJOY.</span>
+          <span>INVEST.</span>
+        </div>
+      </div>
+      <div class="burger__right">
+        <button class="burger__close">
+          <span class="burger__close-line"></span>
+          <span class="burger__close-line"></span>
+        </button>
+        <div class="header__btns">
+          <a class="btn--social" href="#!">
+            <img src="images/icons/whatsapp.svg" alt="whatsapp">
+          </a>
+          <button class="btn--language">
+            <span>en</span>
+          </button>
+          <button class="dark-mode-btn">
+            <img class="dark-mode" src="images/moon.svg" alt="dark-mode">
+            <span class="dark-mode-circle"></span>
+            <img class="light-mode" src="images/sun.svg" alt="light-mode">
+          </button>
+        </div>
+        <div class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#!">Villas</a></li>
+            <li class="nav__item"><a class="nav__link" href="#!">Apartments</a></li>
+            <li class="nav__item"><a class="nav__link" href="#!">Architecture</a></li>
+            <li class="nav__item"><a class="nav__link" href="#!">Features</a></li>
+            <li class="nav__item"><a class="nav__link" href="#!">Pandawa River Surf</a></li>
+            <li class="nav__item"><a class="nav__link" href="#!">Ecolit technology</a></li>
+            <li class="nav__item"><a class="nav__link" href="#!">Advantages of project</a></li>
+            <li class="nav__item"><a class="nav__link" href="#!">Seismic protection</a></li>
+            <li class="nav__item"><a class="nav__link" href="#!">Invest model</a></li>
+            <li class="nav__item"><a class="nav__link" href="#!">Location</a></li>
+            <li class="nav__item"><a class="nav__link" href="#!">Contact us</a></li>
+          </ul>
+        </div>
+        <a class="btn--burger" href="#!">
+          Send request
+        </a>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">
+            <a class="logo__link" href="#!">
+              <img class="logo__img" src="images/logo.svg" alt="logo">
+            </a>
+          </div>
+          <a class="btn--header" href="#!">
+            Send request
+          </a>
+          <button class="burger__btn burger__open">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+          <div class="header__btns">
+            <a class="btn--social" href="#!">
+              <img src="images/icons/whatsapp.svg" alt="whatsapp">
+            </a>
+            <button class="btn--language">
+              <span>en</span>
+            </button>
+            <button class="dark-mode-btn">
+              <img class="dark-mode" src="images/moon.svg" alt="dark-mode">
+              <span class="dark-mode-circle"></span>
+              <img class="light-mode" src="images/sun.svg" alt="light-mode">
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+<main class="main">
+  <section class="hero">
+    <div class="video" style="background-image: url(images/hero-d.jpg);">
+      <video class="video__media" src="#!" muted autoplay loop></video>
+    </div>
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__socials">
+          <a class="hero__socials-link" href="#!">
+            <img class="icons-dark" src="images/icons/youtube-white.svg" alt="">
+            <img class="icons-light" src="images/icons/youtube-black.svg" alt="">
+          </a>
+          <a class="hero__socials-link" href="#!">
+            <svg class="icons-socials">
+              <use xlink:href="#icons-facebook"></use>
+            </svg>
+          </a>
+          <a class="hero__socials-link" href="#!">
+            <svg class="icons-socials">
+              <use xlink:href="#icons-instagram"></use>
+            </svg>
+          </a>
+        </div>
+        <h1 class="hero__title wow fadeInUp" data-wow-duration="1s" data-wow-offset="50"><span>construction</span>
+          technologies with 25 years guarantee!</h1>
+        <span class="hero__descr wow fadeInUp" data-wow-duration="1s" data-wow-offset="50">Presented by global
+          construction & development</span>
+      </div>
+    </div>
+  </section>
+  <section class="apartmens">
+    <div class="container">
+      <div class="apartmens__inner">
+        <div class="apartmens__tab-btns line-after wow fadeInUp" data-wow-duration="1s" data-wow-offset="50">
+          <button class="apartmens__tab-btn tab-active">VILLAS</button>
+          <button class="apartmens__tab-btn">apartments</button>
+        </div>
+        <div class="apartmens__types wow fadeInUp" data-wow-duration="1s" data-wow-offset="50">
+          <button class="apartmens__type apartmens__type-active">Type 01</button>
+          <button class="apartmens__type">Type 02</button>
+          <button class="apartmens__type">Type 03</button>
+        </div>
+        <div class="apartmens__tab-item">
+          <div class="apartmens__slider">
+            <button class="apartmens__slider-arrow apartmens__slider-arrow-prev">
+              <img src="images/slider-arrow-prev.svg" alt="slider-arrow">
+            </button>
+            <div class="apartmens__slides">
+              <div class="apartmens__slide">
+                <img class="apartmens__slide-img" src="images/apartmens-slide.jpg" alt="slide">
+              </div>
+            </div>
+            <button class="apartmens__slider-arrow apartmens__slider-arrow-next">
+              <img src="images/slider-arrow-next.svg" alt="slider-arrow">
+            </button>
+          </div>
+          <div class="apartmens__descr wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+            <ul class="apartmens__descr-list">
+              <li class="apartmens__descr-item">
+                <img class="icons-dark" src="images/icons/bed-white.png" alt="icon">
+                <img class="icons-light" src="images/icons/bed-black.png" alt="icon">
+                <span>2 bedroom</span>
+              </li>
+              <li class="apartmens__descr-item">
+                <img class="icons-dark" src="images/icons/tile-white.png" alt="icon">
+                <img class="icons-light" src="images/icons/tile-black.png" alt="icon">
+                <span>2 floors</span>
+              </li>
+              <li class="apartmens__descr-item">
+                <img class="icons-dark" src="images/icons/parking-white.png" alt="icon">
+                <img class="icons-light" src="images/icons/parking-black.png" alt="icon">
+                <span>Parking</span>
+              </li>
+              <li class="apartmens__descr-item">
+                <img class="icons-dark" src="images/icons/bathroom-white.png" alt="icon">
+                <img class="icons-light" src="images/icons/bathroom-black.png" alt="icon">
+                <span>3 bathroom</span>
+              </li>
+              <li class="apartmens__descr-item">
+                <img class="icons-dark" src="images/icons/pool-white.png" alt="icon">
+                <img class="icons-light" src="images/icons/pool-black.png" alt="icon">
+                <span>Pool 15 м2</span>
+              </li>
+              <li class="apartmens__descr-item">
+                <img class="icons-dark" src="images/icons/kitchen-white.png" alt="icon">
+                <img class="icons-light" src="images/icons/kitchen-black.png" alt="icon">
+                <span>Kitchen - living room</span>
+              </li>
+              <li class="apartmens__descr-item">
+                <img class="icons-dark" src="images/icons/bbq-white.png" alt="icon">
+                <img class="icons-light" src="images/icons/bbq-black.png" alt="icon">
+                <span>BBQ</span>
+              </li>
+              <li class="apartmens__descr-item">
+                <img class="icons-dark" src="images/icons/ocean-white.png" alt="icon">
+                <img class="icons-light" src="images/icons/ocean-black.png" alt="icon">
+                <span>Ocean view</span>
+              </li>
+            </ul>
+            <span class="apartmens__descr-price">Price starts from: <span>202 000 $</span></span>
+            <a class="btn" href="#!">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="descriptions">
+    <div class="container">
+      <div class="descriptions__inner">
+        <div class="descriptions__top line-before">
+          <div class="descriptions__top-images">
+            <img class="descriptions__top-img descriptions__top-img--1" src="images/descriptions-1.jpg"
+              alt="descriptions">
+            <img class="descriptions__top-img descriptions__top-img--2" src="images/descriptions-2.jpg"
+              alt="descriptions">
+          </div>
+          <div class="descriptions__top-info wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+            <p>
+              PANDAWA RESIDENCE the best place on the island for those looking for their oceanfront home and
+              profitable investment projects.
+              A unique space that combines modern urban infrastructure with authentic Balinese design.
+            </p>
+          </div>
+        </div>
+        <div class="descriptions__middle line-before">
+          <img class="descriptions__middle-img descriptions__middle-img--1" src="images/descriptions-3.jpg"
+            alt="descriptions">
+          <div class="descriptions__middle-info wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+            <span>PANDAWA RESIDENCE property is an excellent investment for both short and long-term rentals.</span>
+            <p>
+              4 rows of two-story villas with stunning ocean views.
+            </p>
+            <p>
+              3 blocks of comfortable apartments.
+            </p>
+            <p>
+              Secluded area for meditation and yoga, lounge and barbecue are available on the roof.
+            </p>
+          </div>
+          <div class="descriptions__middle-chars wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+            <div class="descriptions__middle-char">
+              <h3 class="descriptions__middle-char-title">14250m2</h3>
+              <span class="line-100"></span>
+              <span>Territory area</span>
+            </div>
+            <div class="descriptions__middle-char">
+              <h3 class="descriptions__middle-char-title">4000m2</h3>
+              <span class="line-100"></span>
+              <span>Apartment area</span>
+            </div>
+            <div class="descriptions__middle-char">
+              <h3 class="descriptions__middle-char-title">7500m2</h3>
+              <span class="line-100"></span>
+              <span>Villas area</span>
+            </div>
+          </div>
+          <img class="descriptions__middle-img descriptions__middle-img--2" src="images/descriptions-4.jpg"
+            alt="descriptions">
+        </div>
+        <div class="descriptions__bottom">
+          <div class="descriptions__bottom-info line-after wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+            <h2 class="descriptions__bottom-title line-after">
+              EXCLUSIVE COMPLEX OF VILLAS AND APARTMENTS ON THE PARADISE ISLAND OF BALI FOR LIFE AND INVESTMENT
+            </h2>
+            <p>
+              the best place on the island for those looking for their oceanfront home and profitable investment
+              projects.
+            </p>
+            <a class="btn" href="#!">learn more</a>
+          </div>
+          <img class="descriptions__bottom-img" src="images/descriptions-5.jpg" alt="descriptions">
+          <div class="descriptions__bottom-table">
+            <div class="descriptions__bottom-table-item wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+              <img class="descriptions__bottom-table-img icons-dark" src="images/icons/home-white.png" alt="icon">
+              <img class="descriptions__bottom-table-img icons-light" src="images/icons/home-black.png" alt="icon">
+              <h5 class="descriptions__bottom-table-title">Leasehold:</h5>
+              <span class="descriptions__bottom-table-text">25 years with guaranteed renewal + 25 years</span>
+            </div>
+            <div class="descriptions__bottom-table-item wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+              <img class="descriptions__bottom-table-img icons-dark" src="images/icons/key-white.png" alt="icon">
+              <img class="descriptions__bottom-table-img icons-light" src="images/icons/key-black.png" alt="icon">
+              <h5 class="descriptions__bottom-table-title">Completion date:</h5>
+              <span class="descriptions__bottom-table-text">January 2025</span>
+            </div>
+            <div class="descriptions__bottom-table-item wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+              <img class="descriptions__bottom-table-img icons-dark" src="images/icons/wrench-white.png" alt="icon">
+              <img class="descriptions__bottom-table-img icons-light" src="images/icons/wrench-black.png" alt="icon">
+              <h5 class="descriptions__bottom-table-title">START OF CONSTRUCTION:</h5>
+              <span class="descriptions__bottom-table-text">January 2024</span>
+            </div>
+            <div class="descriptions__bottom-table-item wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+              <img class="descriptions__bottom-table-img icons-dark" src="images/icons/shopping-white.png" alt="icon">
+              <img class="descriptions__bottom-table-img icons-light" src="images/icons/shopping-black.png" alt="icon">
+              <h5 class="descriptions__bottom-table-title">PROJECT STATUS:</h5>
+              <span class="descriptions__bottom-table-text">Pre-sale</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="architecture">
+    <div class="container">
+      <div class="architecture__inner">
+        <h2 class="architecture__title wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">ARCHITECTURE.</h2>
+        <div class="architecture__types-wrapper line-after">
+          <div class="architecture__types wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+            <button class="architecture__type architecture__type-active">EXTERIOR</button>
+            <button class="architecture__type">BEDROOM</button>
+            <button class="architecture__type">KITCHEN</button>
+            <button class="architecture__type">LIVING ROOM</button>
+            <button class="architecture__type">BATHROOM</button>
+          </div>
+        </div>
+        <div class="slider">
+          <button class="slider-arrow slider-arrow-prev">
+            <img src="images/slider-arrow-prev.svg" alt="slider-arrow">
+          </button>
+          <div class="slides">
+            <div class="slide">
+              <img class="slide-img" src="images/architecture.jpg" alt="slide">
+            </div>
+          </div>
+          <button class="slider-arrow slider-arrow-next">
+            <img src="images/slider-arrow-next.svg" alt="slider-arrow">
+          </button>
+        </div>
+        <div class="architecture__info">
+          The project is presented by the developer ECOLIT with 17 years of construction experience in countries with
+          tropical
+          climates and high seismic activity.
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <div class="features__inner line-after">
+        <div class="features__images">
+          <img class="features__img" src="images/features.png" alt="features">
+        </div>
+        <div class="features__descr wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+          <h3 class="features__title line-after">FEATURES.</h3>
+          <ul class="features__list">
+            <li class="features__item">• Villa 101 m2/36 units</li>
+            <li class="features__item">• Villa 121 m2/20 units</li>
+            <li class="features__item">• Villa 153 m2/8 units </li>
+            <li class="features__item">• Apartments 40 m2/ 91 units</li>
+            <li class="features__item">• Swimming pool </li>
+            <li class="features__item">• Play Area </li>
+            <li class="features__item">• Children’s swimming pool</li>
+            <li class="features__item">• 24/7 supermarket</li>
+            <li class="features__item">• 24/7 concierge, security</li>
+            <li class="features__item">• Yoga Stodio</li>
+            <li class="features__item">• Restaurant</li>
+          </ul>
+          <a class="btn" href="#!">get the project brochure</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="surf">
+    <div class="container">
+      <div class="surf__inner" style="background-image: url(images/surf.jpg);">
+        <div class="surf__info wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+          <p>
+            Pandawa River Surf - innovative artificial wave surfing technology. The installation, which simulates a
+            wave, uses the
+            principle of a river rapid - a unique technology, which analogs are presented only in Singapore and Tokyo.
+          </p>
+          <p>
+            The first residential complex of villas and apartments on the island of Bali providing a unique opportunity
+            to enjoy an
+            artificial wave for surfing!
+          </p>
+        </div>
+        <div class="surf__images">
+          <img class="surf__img" src="images/surf-logo.svg" alt="surf">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="container">
+      <div class="advantages__inner">
+        <div class="advantages__descr">
+          <h2 class="advantages__title wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">Advanteges
+            of project</h2>
+          <div class="advantages__descr-text wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+            <p>
+              Pandawa Residence is a unique project in Bali that provides an unrivaled construction
+              <span class="cstm">guarantee for 25 years!</span>
+            </p>
+            <p>
+              Advanced and tested construction technologies with a long-term guarantee at every stage of construction
+              has
+              revolutionized the development market of Bali.
+            </p>
+            <p>
+              <span>A LONG-TERM construction guarantee = HIGH RETURN of your investments!</span>
+            </p>
+          </div>
+        </div>
+        <span class="line-v"></span>
+        <div class="advantages__info">
+          <div class="advantages__info-item wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+            <h3 class="advantages__info-title">17 years</h3>
+            <span class="line-100"></span>
+            <span>in the construction industry</span>
+          </div>
+          <div class="advantages__info-item wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+            <h3 class="advantages__info-title">2000</h3>
+            <span class="line-100"></span>
+            <span>completed projects worldwide, including Europe, Asia, USA and UAE</span>
+          </div>
+          <div class="advantages__info-item wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+            <h3 class="advantages__info-title">100%</h3>
+            <span class="line-100"></span>
+            <span>completion on time and high quality</span>
+          </div>
+          <div class="advantages__info-item wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+            <h3 class="advantages__info-title">800000m2</h3>
+            <span class="line-100"></span>
+            <span>already built object</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="investment">
+    <div class="container">
+      <div class="investment__inner">
+        <h2 class="investment__title wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">INVESTMENT MODEL</h2>
+        <div class="investment__text wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+          price, calculation of profit, return on investment, and benefits for investors to make informed investment
+          decisions.
+        </div>
+        <div class="investment__btn-box wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50"
+          style="background-image: url(images/investment-decor-white.png);">
+          <a class="btn" href="#!">get the project brochure</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="gallery line-after">
+    <div class="container">
+      <div class="gallery__inner">
+        <div class="gallery__img-box gallery__img-box--1 jarallax">
+          <img class="gallery__img jarallax-img" src="images/gallery-1.jpg" alt="gallery">
+        </div>
+        <div class="gallery__img-box gallery__img-box--2">
+          <img class="gallery__img" src="images/gallery-2.jpg" alt="gallery">
+        </div>
+        <div class="gallery__img-box gallery__img-box--3">
+          <img class="gallery__img" src="images/gallery-3.jpg" alt="gallery">
+        </div>
+        <div class="gallery__img-box gallery__img-box--4">
+          <img class="gallery__img" src="images/gallery-4.jpg" alt="gallery">
+        </div>
+        <div class="gallery__img-box gallery__img-box--5">
+          <img class="gallery__img" src="images/gallery-5.jpg" alt="gallery">
+        </div>
+        <div class="gallery__title wow fadeInUp" data-wow-duration="1s" data-wow-offset="50">
+          <span class="switch-2">L<span class="switch-1">IvE.</span></span>
+          <span>ENJOY.</span>
+          <span>INVEST.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="seismic line-after">
+    <div class="container">
+      <div class="seismic__inner">
+        <div class="seismic__info wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+          <h2 class="seismic__title">Seismic protection.</h2>
+          <div class="seismic__text">
+            <p>
+              The only project in Bali using advanced Japanese foundation technology.
+            </p>
+            <p>
+              The use of seismic insulation pads and rubber gaskets guarantees the durability of structures and ensures
+              safety in
+              conditions of strong earthquakes.
+            </p>
+          </div>
+        </div>
+        <div class="seismic__images">
+          <img class="seismic__img seismic__img--1" src="images/seismic-1.jpg" alt="seismic">
+          <img class="seismic__img seismic__img--2" src="images/seismic-2.jpg" alt="seismic">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="location">
+    <div class="container">
+      <div class="location__inner">
+        <h2 class="location__title wow fadeInUp" data-wow-duration="1s" data-wow-offset="50">location</h2>
+        <div class="location__content">
+          <img class="location__img" src="images/location.jpg" alt="location">
+          <div class="location__text wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+            <ul class="location__text-list">
+              <li class="location__text-item">
+                The location of the complex on the Bukit Pandawa
+              </li>
+              <li class="location__text-item">
+                Many new projects are currently underway here
+              </li>
+              <li class="location__text-item">
+                Renting out property in Bukit Pandawa promises stable income in the long term.
+              </li>
+            </ul>
+            <ul class="location__text-list">
+              <li class="location__text-item">
+                The attractive location of the complex in the southern part of Bukit offers convenient roads and is
+                surrounded by the
+                Nusa Dua Golden Resort Aria resort area.
+              </li>
+              <li class="location__text-item">
+                The Pandawa area is also famous for it’s spectacular views: majestic cliffs, endless golden beaches, and
+                a paradise
+                coastline filled with surfing opportunities, cliffs, and paragliding.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacts jarallax" style="background-image: url(images/contacts.jpg);">
+    <div class="container">
+      <div class="contacts__inner">
+        <div class="contacts__col contacts__left line-before">
+          <h2 class="contacts__left-title wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">CONTACTS</h2>
+          <a class="contacts__link wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50" href="tel:+6282235372572">
+            <img class="contacts__icons" src="images/icons/phone.png" alt="icon">
+            <span>+62 822-3537-2572</span>
+          </a>
+          <a class="contacts__link wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50"
+            href="mailto:info@pandawa-residence.com">
+            <img class="contacts__icons" src="images/icons/mail.png" alt="icon">
+            <span>info@pandawa-residence.com</span>
+          </a>
+          <a class="contacts__link wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50" href="#!">
+            <img class="contacts__icons" src="images/icons/location.png" alt="icon">
+            <span>Jl.Karang Pandawa № 8 Kutuh Kuta Selatan, Badung, Provinsi Bali, Kode Pos: 80361</span>
+          </a>
+        </div>
+        <div class="contacts__col contacts__right line-before">
+          <span class="contacts__right-text wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">contact us</span>
+          <h3 class="contacts__right-title wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">WHATS NEXT?</h3>
+          <ul class="contacts__right-text wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50">
+            <li>
+              View our project brochure&price list
+            </li>
+            <li>
+              Visit our unit in Pandawa Residence
+            </li>
+          </ul>
+          <a class="contacts__link wow fadeInUp" data-wow-duration="0.7s" data-wow-offset="50" href="tel:+6282235372572">
+            <img class="contacts__icons" src="images/icons/whatsapp.svg" alt="icon">
+            <span>+62 822-3537-2572</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact-us">
+    <div class="container">
+      <div class="contact-us__inner line-after">
+        <form class="contact-us__form">
+          <input class="contact-us__input" type="text" placeholder="first name">
+          <input class="contact-us__input" type="text" placeholder="last name">
+          <input class="contact-us__input" type="tel" placeholder="number">
+          <textarea class="contact-us__textarea" placeholder="purpose of enquiry"></textarea>
+          <button class="btn">Get access</button>
+        </form>
+        <div class="map">
+          <img src="images/map.jpg" alt="map">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#!">Villas</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Apartments</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Architecture</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Features</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Pandawa River Surf</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Ecolit technology</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Advantages of project</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Seismic protection</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Invest model</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Location</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <div class="logo">
+          <a class="logo__link" href="#!">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+        </div>
+        <a class="contacts__link location__link" href="#!">
+          <img class="contacts__icons" src="images/icons/location.png" alt="icon">
+          <span>Jl.Karang Pandawa № 8 Kutuh Kuta Selatan, Badung, Provinsi Bali, Kode Pos: 80361</span>
+        </a>
+        <a class="contacts__link phone__link" href="tel:+6282235372572">
+          <img class="contacts__icons" src="images/icons/whatsapp.svg" alt="icon">
+          <span>+62 822-3537-2572</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+<script defer src="libs/jarallax/jarallax.js"></script>
+<script defer src="libs/wowjs/wow.js"></script>
+<script defer src="js/main.js"></script>
+<script type="module">
+
+  
+</script>
+</body>
+
+</html>
